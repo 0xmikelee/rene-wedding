@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/*
+  Display type stands in for PP Pangaia and Rhymes Text (licensed).
+  UI type stands in for Neue Haas Grotesk Display Pro (licensed).
+*/
+@theme inline {
+  --font-display: var(--font-cormorant), "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-ink: #322720;
+  --color-dark: #281f1c;
+  --color-cream: #fffffc;
+  --color-ivory: #fbfbf8;
+  --color-line: #d3d3d3;
+  --color-field: #fafafa;
+  --color-muted: #5c5c5c;
+  --color-blush: #f4efed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #281f1c;
+  color: #fffffc;
+}
