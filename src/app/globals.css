@@ -1,12 +1,8 @@
 @import "tailwindcss";
 
-/*
-  Display type stands in for PP Pangaia and Rhymes Text (licensed).
-  UI type stands in for Neue Haas Grotesk Display Pro (licensed).
-*/
 @theme inline {
-  --font-display: var(--font-cormorant), "Iowan Old Style", Palatino, "Palatino Linotype", serif;
-  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: var(--font-rhymes), "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --font-sans: var(--font-neue-haas), "Helvetica Neue", Helvetica, Arial, sans-serif;
   --color-ink: #322720;
   --color-dark: #281f1c;
   --color-cream: #fffffc;

@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400"],
-  style: ["normal", "italic"],
-  variable: "--font-cormorant",
+const neueHaas = localFont({
+  src: "../../public/fonts/NeueHaasDisplayRoman.ttf",
+  variable: "--font-neue-haas",
+  weight: "400",
+  display: "swap",
+});
+
+const rhymes = localFont({
+  src: "../../public/fonts/RhymesTextRegular.ttf",
+  variable: "--font-rhymes",
+  weight: "400",
   display: "swap",
 });
 
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cormorant.variable}>
+    <html lang="en" className={`${neueHaas.variable} ${rhymes.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );
