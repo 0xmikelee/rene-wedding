@@ -74,7 +74,7 @@ export function Hero() {
             Rene &amp; Arthur
           </p>
         </div>
-        <p className="font-instrument text-[38px] leading-none font-light uppercase italic lg:hidden">
+        <p className="font-instrument text-[36px] leading-none font-light uppercase italic lg:hidden">
           Rene &amp; Arthur
         </p>
         <p className="mt-4 font-instrument text-base tracking-[0.04em] uppercase lg:mt-[120px] lg:text-[35px]">
