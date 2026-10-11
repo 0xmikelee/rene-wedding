@@ -1,7 +1,12 @@
 "use client";
 
 import { useState, type FormEvent, type ReactNode } from "react";
-import { attendanceOptions, menuOptions, rsvpSchema, type RsvpField } from "@/lib/rsvp";
+import {
+  attendanceOptions,
+  menuOptions,
+  rsvpSchema,
+  type RsvpField,
+} from "@/lib/rsvp";
 
 type FieldErrors = Partial<Record<RsvpField, string>>;
 
@@ -73,7 +78,9 @@ export function RsvpForm() {
 
       if (!response.ok) {
         setFieldErrors(payload.fieldErrors ?? {});
-        setFormError(payload.error || "We couldn’t save your RSVP. Please try again.");
+        setFormError(
+          payload.error || "We couldn’t save your RSVP. Please try again.",
+        );
         return;
       }
 
@@ -163,10 +170,8 @@ export function RsvpForm() {
               return (
                 <label
                   key={option.value}
-                  className={`relative flex flex-1 cursor-pointer items-center gap-3 rounded-md border p-3 lg:rounded-lg lg:p-4 ${
-                    selected
-                      ? "border-dark bg-dark text-white"
-                      : "border-line text-ink/60"
+                  className={`relative flex flex-1 cursor-pointer items-center gap-3 rounded-md border border-line bg-transparent p-3 lg:rounded-lg lg:p-4 ${
+                    selected ? "text-ink" : "text-ink/60"
                   }`}
                 >
                   <input
@@ -177,8 +182,8 @@ export function RsvpForm() {
                     onChange={() => update("attending", option.value)}
                     className="absolute inset-0 cursor-pointer opacity-0"
                   />
-                  <RadioDot selected={selected} inverted={selected} />
-                  <span className="text-[13px] tracking-[0.13px] uppercase">
+                  <RadioDot selected={selected} />
+                  <span className="text-[13px] font-rhymes-display tracking-[0.13px]">
                     {option.label}
                   </span>
                 </label>
@@ -186,7 +191,9 @@ export function RsvpForm() {
             })}
           </div>
           {fieldErrors.attending ? (
-            <p className="mt-2 text-xs text-[#8a3d3d]">{fieldErrors.attending}</p>
+            <p className="mt-2 text-xs text-[#8a3d3d]">
+              {fieldErrors.attending}
+            </p>
           ) : null}
         </fieldset>
 
@@ -194,8 +201,12 @@ export function RsvpForm() {
           id="dietary"
           label={
             <>
-              <span className="lg:hidden">Do you have any dietary restrictions?</span>
-              <span className="hidden lg:inline">Do you have any food allergies?</span>
+              <span className="lg:hidden">
+                Do you have any dietary restrictions?
+              </span>
+              <span className="hidden lg:inline">
+                Do you have any food allergies?
+              </span>
             </>
           }
           error={fieldErrors.dietary}
@@ -230,7 +241,9 @@ export function RsvpForm() {
                     className="absolute inset-0 cursor-pointer opacity-0"
                   />
                   <RadioDot selected={selected} />
-                  <span className="font-display text-sm font-light">{option.label}</span>
+                  <span className="font-display text-sm font-light">
+                    {option.label}
+                  </span>
                 </label>
               );
             })}
@@ -241,7 +254,10 @@ export function RsvpForm() {
         </fieldset>
       </div>
 
-      <div className="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
+      <div
+        className="absolute -left-[9999px] h-px w-px overflow-hidden"
+        aria-hidden="true"
+      >
         <label>
           Company
           <input
@@ -304,17 +320,13 @@ function Field({
   );
 }
 
-function RadioDot({ selected, inverted = false }: { selected: boolean; inverted?: boolean }) {
+function RadioDot({ selected }: { selected: boolean }) {
   return (
     <span
       aria-hidden="true"
-      className={`grid size-3.5 shrink-0 place-items-center rounded-full border ${
-        inverted ? "border-white" : "border-ink"
-      }`}
+      className="grid size-3.5 shrink-0 place-items-center rounded-full border border-ink"
     >
-      {selected ? (
-        <span className={`size-2 rounded-full ${inverted ? "bg-white" : "bg-ink"}`} />
-      ) : null}
+      {selected ? <span className="size-2 rounded-full bg-ink" /> : null}
     </span>
   );
 }

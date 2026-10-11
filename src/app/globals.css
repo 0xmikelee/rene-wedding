@@ -2,6 +2,8 @@
 
 @theme inline {
   --font-display: var(--font-rhymes), "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --font-rhymes-display: var(--font-rhymes-display-face), "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --font-instrument: var(--font-instrument-serif), "Iowan Old Style", Palatino, "Palatino Linotype", serif;
   --font-sans: var(--font-neue-haas), "Helvetica Neue", Helvetica, Arial, sans-serif;
   --color-ink: #322720;
   --color-dark: #281f1c;

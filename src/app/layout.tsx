@@ -16,6 +16,21 @@ const rhymes = localFont({
   display: "swap",
 });
 
+const rhymesDisplay = localFont({
+  src: "../../public/fonts/RhymesDisplayTrial-Regular.otf",
+  variable: "--font-rhymes-display-face",
+  weight: "400",
+  display: "swap",
+});
+
+const instrumentSerif = localFont({
+  src: "../../public/fonts/InstrumentSerif-Italic.ttf",
+  variable: "--font-instrument-serif",
+  weight: "400",
+  style: "italic",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Rene & Arthur — 12.12.26",
   description:
@@ -29,7 +44,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${neueHaas.variable} ${rhymes.variable}`}>
+    <html
+      lang="en"
+      className={`${neueHaas.variable} ${rhymes.variable} ${rhymesDisplay.variable} ${instrumentSerif.variable}`}
+    >
       <body className="antialiased">{children}</body>
     </html>
   );

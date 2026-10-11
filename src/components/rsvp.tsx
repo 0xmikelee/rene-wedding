@@ -15,7 +15,7 @@ export function Rsvp() {
         className="pointer-events-none object-cover opacity-30 lg:opacity-20"
       />
       <div className="relative z-10 mx-auto flex w-full max-w-[640px] flex-col items-center">
-        <h2 className="font-display text-[36px] leading-none font-light text-ink uppercase lg:text-[48px]">
+        <h2 className="font-rhymes-display text-[36px] leading-none font-light text-ink uppercase lg:text-[48px]">
           RSVP
         </h2>
         <div className="mt-8 w-full lg:mt-[78px]">

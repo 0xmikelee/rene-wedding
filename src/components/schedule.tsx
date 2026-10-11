@@ -6,7 +6,7 @@ export function Schedule() {
       id="schedule"
       className="bg-cream px-6 py-[60px] text-ink lg:px-20 lg:pt-24 lg:pb-[115px]"
     >
-      <h2 className="text-center font-display text-[36px] leading-none font-light uppercase lg:text-[48px]">
+      <h2 className="text-center font-rhymes-display text-[36px] leading-none font-light uppercase lg:text-[48px]">
         Schedule
       </h2>
 

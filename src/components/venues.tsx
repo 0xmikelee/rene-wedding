@@ -2,8 +2,11 @@ import { venues } from "@/lib/content";
 
 export function Venues() {
   return (
-    <section id="venues" className="bg-dark px-6 py-[72px] text-ivory lg:px-20 lg:py-24">
-      <h2 className="text-center font-display text-[36px] leading-none font-light uppercase lg:text-[48px]">
+    <section
+      id="venues"
+      className="bg-dark px-6 py-[72px] text-ivory lg:px-20 lg:py-24"
+    >
+      <h2 className="text-center font-rhymes-display text-[36px] leading-none font-light uppercase lg:text-[48px]">
         Venues
       </h2>
 
@@ -13,7 +16,7 @@ export function Venues() {
             key={venue.name}
             className="flex w-full max-w-[509px] flex-col gap-5 rounded-[5px] bg-cream px-6 py-[30px] text-ink lg:gap-6 lg:p-12"
           >
-            <h3 className="font-display text-[28px] leading-[1.1] font-light tracking-[0.56px] uppercase lg:text-[35px] lg:tracking-[0.7px]">
+            <h3 className="font-display text-[28px] leading-[1.1] font-light tracking-[0.56px] uppercase lg:text-[30px] lg:tracking-[0.7px]">
               {venue.name}
             </h3>
 
@@ -28,7 +31,9 @@ export function Venues() {
               >
                 {venue.mobileEvent}
               </p>
-              <p className="text-xs leading-[18px] lg:hidden">{venue.address}</p>
+              <p className="text-xs leading-[18px] lg:hidden">
+                {venue.address}
+              </p>
               <p className="mt-2 hidden text-[12px] leading-normal whitespace-nowrap uppercase lg:block">
                 {venue.event}
                 <span className="px-2 normal-case">|</span>
@@ -41,7 +46,8 @@ export function Venues() {
                 Parking &amp; Arrival
               </p>
               <p className="text-[11px] leading-5 tracking-[0.22px] text-muted lg:text-[13px] lg:leading-[23px] lg:tracking-[0.26px]">
-                Please note that there will be no parking available at the venue.
+                Please note that there will be no parking available at the
+                venue.
               </p>
             </div>
 
