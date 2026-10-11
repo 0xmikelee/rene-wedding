@@ -10,7 +10,7 @@ export function Venues() {
         Venues
       </h2>
 
-      <div className="mx-auto mt-10 flex w-full max-w-[1088px] flex-col items-center gap-10 lg:mt-8 lg:flex-row lg:items-stretch lg:justify-center lg:gap-[70px]">
+      <div className="mx-auto mt-6 flex w-full max-w-[1088px] flex-col items-center gap-10 lg:mt-[70px] lg:flex-row lg:items-stretch lg:justify-center lg:gap-[70px]">
         {venues.map((venue) => (
           <article
             key={venue.name}

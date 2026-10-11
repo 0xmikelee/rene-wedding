@@ -19,13 +19,13 @@ export function Rsvp() {
         alt=""
         fill
         sizes="100vw"
-        className="pointer-events-none hidden object-cover opacity-20 lg:block"
+        className="pointer-events-none hidden object-cover lg:block"
       />
       <div className="relative z-10 mx-auto flex w-full max-w-[640px] flex-col items-center">
         <h2 className="font-rhymes-display text-[36px] leading-none font-light text-ink uppercase lg:text-[48px]">
           RSVP
         </h2>
-        <div className="mt-8 w-full lg:mt-[78px]">
+        <div className="mt-6 w-full lg:mt-[70px]">
           <RsvpForm />
         </div>
       </div>
