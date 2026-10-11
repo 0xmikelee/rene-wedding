@@ -12,14 +12,12 @@ export function CoverImage({
   alt,
   className = "object-center",
 }: CoverImageProps) {
+  const frame = `pointer-events-none absolute inset-0 size-full max-w-none object-cover ${className}`;
+
   return (
-    <picture className="pointer-events-none absolute inset-0">
-      <source media="(min-width: 1024px)" srcSet={desktopSrc} />
-      <img
-        src={mobileSrc}
-        alt={alt}
-        className={`size-full max-w-none object-cover ${className}`}
-      />
-    </picture>
+    <>
+      <img src={mobileSrc} alt={alt} className={`${frame} lg:hidden`} />
+      <img src={desktopSrc} alt="" className={`${frame} hidden lg:block`} />
+    </>
   );
 }

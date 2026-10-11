@@ -7,7 +7,7 @@ export function Attire() {
       <h2 className="font-rhymes-display text-[36px] leading-none font-light uppercase lg:text-[48px]">
         Attire
       </h2>
-      <div className="mx-auto mt-6 max-w-[756px] lg:mt-0">
+      <div className="mx-auto mt-6 max-w-[756px] text-balance lg:mt-0">
         <p className="text-[16px] leading-[1.7] tracking-[0.18px] text-ink/80 lg:mt-6">
           We kindly invite you to dress in black-tie or formal attire.
           <br />

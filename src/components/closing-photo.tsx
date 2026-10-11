@@ -2,7 +2,7 @@ import { CoverImage } from "@/components/cover-image";
 
 export function ClosingPhoto() {
   return (
-    <section aria-label="Rene and Arthur walking between cypress trees" className="relative h-[408px] overflow-hidden lg:h-[656px]">
+    <section aria-label="Rene and Arthur walking between cypress trees" className="relative aspect-[1188/1139] overflow-hidden lg:aspect-auto lg:h-[656px]">
       <CoverImage
         mobileSrc="/images/footer-mobile.webp"
         desktopSrc="/images/footer-desktop.webp"

@@ -68,11 +68,10 @@ export function Hero() {
         </a>
       </div>
 
-      <p className="relative z-10 hidden flex-1 items-center justify-center px-6 text-center font-instrument text-[100px] leading-none font-light text-ivory uppercase italic lg:flex">
-        Rene &amp; Arthur
-      </p>
-
       <div className="relative z-10 mt-auto px-6 pb-9 text-center text-ivory lg:pb-[60px]">
+        <p className="hidden font-instrument text-[100px] leading-none font-light uppercase italic lg:mb-[190px] lg:block">
+          Rene &amp; Arthur
+        </p>
         <p className="font-instrument text-[38px] leading-none font-light uppercase italic lg:hidden">
           Rene &amp; Arthur
         </p>

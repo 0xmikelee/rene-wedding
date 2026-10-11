@@ -35,7 +35,9 @@ export const metadata: Metadata = {
   title: "Rene & Arthur — 12.12.26",
   description:
     "Join Rene and Arthur on 12 December 2026. Schedule, venues, attire, and RSVP.",
-  icons: { icon: "/images/monogram.webp" },
+  icons: {
+    icon: { url: "/images/monogram.ico", type: "image/png" },
+  },
 };
 
 export default function RootLayout({

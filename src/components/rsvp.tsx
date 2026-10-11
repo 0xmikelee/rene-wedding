@@ -8,11 +8,18 @@ export function Rsvp() {
       className="relative overflow-hidden bg-blush px-6 py-[72px] lg:px-20 lg:pt-24 lg:pb-[120px]"
     >
       <Image
+        src="/rsvp-pattern-mobile.png"
+        alt=""
+        fill
+        sizes="100vw"
+        className="pointer-events-none object-cover opacity-30 lg:hidden"
+      />
+      <Image
         src="/images/rsvp-pattern.webp"
         alt=""
         fill
         sizes="100vw"
-        className="pointer-events-none object-cover opacity-30 lg:opacity-20"
+        className="pointer-events-none hidden object-cover opacity-20 lg:block"
       />
       <div className="relative z-10 mx-auto flex w-full max-w-[640px] flex-col items-center">
         <h2 className="font-rhymes-display text-[36px] leading-none font-light text-ink uppercase lg:text-[48px]">
