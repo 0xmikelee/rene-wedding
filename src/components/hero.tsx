@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <header
       id="top"
-      className="relative flex h-[600px] flex-col justify-between overflow-hidden md:h-[900px]"
+      className="relative flex h-[70dvh] flex-col justify-between overflow-hidden md:h-[900px]"
     >
       <div className="pointer-events-none absolute inset-0">
         <Image
@@ -68,7 +68,7 @@ export function Hero() {
         </a>
       </div>
 
-      <div className="relative z-10 my-auto px-6 pb-9 text-center text-ivory lg:pb-0">
+      <div className="relative z-10 lg:my-auto px-6 pb-9 text-center text-ivory lg:pb-0">
         <div className="hidden lg:flex lg:flex-col lg:items-center h-full">
           <p className="font-instrument text-[100px] leading-none font-light uppercase italic">
             Rene &amp; Arthur

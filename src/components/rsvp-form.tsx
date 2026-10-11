@@ -183,7 +183,7 @@ export function RsvpForm() {
                     className="absolute inset-0 cursor-pointer opacity-0"
                   />
                   <RadioDot selected={selected} />
-                  <span className="text-[13px] font-rhymes-display tracking-[0.1px] leading-[19.5px]">
+                  <span className="text-[14px] font-rhymes-display tracking-[0.1px] leading-[19.5px]">
                     {option.label}
                   </span>
                 </label>
