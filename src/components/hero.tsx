@@ -68,14 +68,16 @@ export function Hero() {
         </a>
       </div>
 
-      <div className="relative z-10 mt-auto px-6 pb-9 text-center text-ivory lg:pb-[60px]">
-        <p className="hidden font-instrument text-[100px] leading-none font-light uppercase italic lg:mb-[190px] lg:block">
-          Rene &amp; Arthur
-        </p>
+      <div className="relative z-10 my-auto px-6 pb-9 text-center text-ivory lg:pb-0">
+        <div className="hidden lg:flex lg:flex-col lg:items-center h-full">
+          <p className="font-instrument text-[100px] leading-none font-light uppercase italic">
+            Rene &amp; Arthur
+          </p>
+        </div>
         <p className="font-instrument text-[38px] leading-none font-light uppercase italic lg:hidden">
           Rene &amp; Arthur
         </p>
-        <p className="mt-4 font-instrument text-base tracking-[0.04em] uppercase lg:mt-0 lg:text-[35px]">
+        <p className="mt-4 font-instrument text-base tracking-[0.04em] uppercase lg:mt-[120px] lg:text-[35px]">
           12. 12. 26
         </p>
       </div>
