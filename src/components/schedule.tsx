@@ -18,7 +18,7 @@ export function Schedule() {
                 className="flex flex-col items-center py-6"
                 aria-hidden="true"
               >
-                <span className="h-[120px] w-px bg-ink" />
+                <span className="h-[80px] w-px bg-ink" />
                 <span className="mt-4 size-2.5 rounded-full bg-ink" />
               </div>
             ) : null}
