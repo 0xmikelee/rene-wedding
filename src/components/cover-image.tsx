@@ -16,8 +16,12 @@ export function CoverImage({
 
   return (
     <>
-      <img src={mobileSrc} alt={alt} className={`${frame} lg:hidden`} />
-      <img src={desktopSrc} alt="" className={`${frame}  hidden lg:block`} />
+      <img src={mobileSrc} alt={alt} className={`${frame} block lg:hidden`} />
+      <img
+        src={desktopSrc}
+        alt={alt}
+        className={`${frame} hidden object-center lg:block`}
+      />
     </>
   );
 }

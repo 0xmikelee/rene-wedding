@@ -4,7 +4,7 @@ export function ClosingPhoto() {
   return (
     <section
       aria-label="Rene and Arthur walking between cypress trees"
-      className="relative aspect-[594/569] overflow-hidden lg:aspect-[1188/1139] lg:h-[656px]"
+      className="relative aspect-[594/569] overflow-hidden lg:max-h-[656px] lg:w-full"
     >
       <CoverImage
         mobileSrc="/images/footer-mobile.webp"
