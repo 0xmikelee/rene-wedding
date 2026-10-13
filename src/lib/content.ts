@@ -14,8 +14,12 @@ export const schedule = [
   {
     time: "10:30 PM",
     title: "After Party",
-    description: "Celebrations continue with late night snacks, drinks, and music!",
-    mobileLines: ["Celebrations continue with late", "night snacks, drinks, and music!"],
+    description:
+      "Celebrations continue with late night snacks, drinks, and music!",
+    mobileLines: [
+      "Celebrations continue with late",
+      "night snacks, drinks, and music!",
+    ],
   },
 ] as const;
 
@@ -34,7 +38,7 @@ export const venues = [
     room: "Pool Room",
     event: "After Party",
     mobileEvent: "After Party",
-    address: "30th, 33 Des Voeux Road West, Sheung Wan",
+    address: "30/F, 33 Des Voeux Road West, Sheung Wan",
     mapHref:
       "https://www.google.com/maps/search/?api=1&query=Soho+House+Hong+Kong+33+Des+Voeux+Road+West",
   },
