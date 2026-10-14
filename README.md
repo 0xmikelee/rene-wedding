@@ -8,6 +8,18 @@ cp .env.example .env.local
 npm run dev
 ```
 
+## Password
+
+The site stays on a password screen until a guest enters the password from their invitation.
+
+Set it in `.env.local`:
+
+```bash
+SITE_PASSWORD=your-invitation-password
+```
+
+Restart `npm run dev` after changing it, and set the same variable on your host when you deploy. Until `SITE_PASSWORD` has a value, the screen stays up and no password will work. A correct password is remembered in that browser for 30 days. Changing the password signs everyone out.
+
 ## Connect the RSVP form to Google Sheets
 
 1. Create a Google Sheet.

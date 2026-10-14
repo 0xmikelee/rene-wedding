@@ -46,8 +46,7 @@ export function Venues() {
                 Parking &amp; Arrival
               </p>
               <p className="text-[11px] leading-5 tracking-[0.22px] text-muted lg:text-[13px] lg:leading-[23px] lg:tracking-[0.26px]">
-                Please note that there will be no parking available at the
-                venue.
+                Hourly parking is available at The Henderson.
               </p>
             </div>
 
