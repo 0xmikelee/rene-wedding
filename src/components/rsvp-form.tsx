@@ -98,9 +98,17 @@ export function RsvpForm() {
       <div className="rounded-[4px] border border-line bg-cream px-6 py-16 text-center shadow-[0_8px_12px_rgba(0,0,0,0.07)] lg:rounded-[5px] lg:px-12 lg:shadow-none">
         <p className="font-display text-4xl font-light uppercase">Thank you</p>
         <p className="mx-auto mt-4 max-w-sm text-base text-balance leading-relaxed text-ink/80">
-          {isAttending
-            ? "Your RSVP has been received. We can’t wait to celebrate with you."
-            : "Thank you for letting us know. You will be missed."}
+          {isAttending ? (
+            <>
+              Your RSVP has been received.
+              <br />
+              <div className="text-balance leading-relaxed text-ink/80">
+                We can’t wait to celebrate with you.
+              </div>
+            </>
+          ) : (
+            "Thank you for letting us know. You will be missed."
+          )}
         </p>
       </div>
     );
