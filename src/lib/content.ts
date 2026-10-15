@@ -30,6 +30,7 @@ export const venues = [
     event: "Reception & Banquet",
     mobileEvent: "Reception & Banquet",
     address: "39/F, The Henderson, 2 Murray Road, Central",
+    parking: "Parking available at The Henderson",
     mapHref:
       "https://www.google.com/maps/search/?api=1&query=The+Henderson+2+Murray+Road+Central+Hong+Kong",
   },
@@ -39,6 +40,7 @@ export const venues = [
     event: "After Party",
     mobileEvent: "After Party",
     address: "30/F, 33 Des Voeux Road West, Sheung Wan",
+    parking: "Please note that there will be no parking available at the venue",
     mapHref:
       "https://www.google.com/maps/search/?api=1&query=Soho+House+Hong+Kong+33+Des+Voeux+Road+West",
   },
