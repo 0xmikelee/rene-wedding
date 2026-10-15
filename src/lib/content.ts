@@ -30,7 +30,8 @@ export const venues = [
     event: "Reception & Banquet",
     mobileEvent: "Reception & Banquet",
     address: "39/F, The Henderson, 2 Murray Road, Central",
-    parking: "Parking available at The Henderson",
+    parking:
+      "Please note that there is limited parking available at The Henderson",
     mapHref:
       "https://www.google.com/maps/search/?api=1&query=The+Henderson+2+Murray+Road+Central+Hong+Kong",
   },
